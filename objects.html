@@ -1,0 +1,28 @@
+<html>
+
+<head>
+    <title>Objects</title>
+</head>
+
+<body>
+    <script>
+        var person = {};
+        //[] operator
+        person["firstname"] = "John";
+        person["lastname"] = "Katlego";
+        console.log("name is : " + person["firstname"] + " " + person["lastname"] + " ");
+
+        //dot operator
+        person.firstname = "John";
+        person.lastname = "Katlego";
+        console.log("name is : " + person.firstname + " " + person.lastname + " ");
+
+        person.address = {
+            suburb:"Sandton"
+        };
+        person.address.suburb = "Sandton";
+        console.log("address is: " + person.address.suburb);
+    </script>
+</body>
+
+</html>

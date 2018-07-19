@@ -1,0 +1,40 @@
+<html>
+<head></head>
+<body>
+    <h1>this is h1 tag</h1>
+    <p type="text" id="pid">this is a pragraph</p>
+    <ul>
+    <li>this is first option list</li>
+    <li>this is second option list</li>
+    <li>this is third option list</li>
+    </ul>
+    <ol id="olid">
+    <li>this ios ordered list</li>
+    </ol>
+    <script>
+    
+    var myElement = document.getElementById("pid");
+    var myElementsList = document.getElementsByTagName("li");
+        
+        console.log(myElement.nodeType);
+        console.log(myElement.innerHTML);
+        console.log(myElement.childNodes);
+        console.log(myElementsList);
+        
+        var myOrderedListId =  document.getElementById("olid");
+        var mySecondElementsList = myOrderedListId.getElementsByTagName("li");
+        console.log(myOrderedListId.childNodes);
+        console.log(mySecondElementsList);
+        
+        var para = document.getElementById("pid");
+        para.setAttribute("align" ,"right");
+        console.log(para.innerHTML);
+        
+        var myNewElement = document.createElement("li");
+        myElement.appendChild(myNewElement);
+        myNewElement.innerHTML = "new text item";
+        
+        console.log(myElementsList);
+    </script>
+    </body>
+</html>

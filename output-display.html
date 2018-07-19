@@ -1,0 +1,53 @@
+<html>
+
+<head>Hello world
+
+</head>
+
+<body>
+    <p id="myVarId">paragraph</p>
+
+    <form>
+         <input type="button" value="Print" onclick="window.print()" /><br>
+      </form>
+    <button type="button" onclick="displayAsInnerHtml()"> click me for InnerHTML!</button><br>
+    <button type="button" onclick="displayAsWrite()"> click me for document.write!</button><br>
+    <button type="button" onclick="redirectLocation()"> click me for redirecting!</button><br>
+    <button type="button" onclick="displayAsAlert()"> click me for an alert message!</button><br>
+    <button type="button" onclick="confirmPopUp()"> click me for confirm pop up!</button><br>
+    <button type="button" onclick="promtPopUp()"> click me for promt pop up!</button><br>
+
+    <script>
+        function displayAsInnerHtml() {
+
+            document.getElementById("myVarId").innerHTML = "I m changed";
+        }
+        
+        function displayAsWrite(){
+            
+            document.write("I m changed by document.write");
+        }
+        function redirectLocation(){
+            window.location="https://www.javascript.com/"
+        }
+        function displayAsAlert(){
+             alert("this is a warning message");
+        }
+        function confirmPopUp(){
+            var reval = confirm("do you want to continue?");
+    if(reval === true){
+        document.write("hello user wants to continue");
+
+       }else {
+           document.write("hello user doesn't want to continue.");
+
+       }
+        }
+        function promtPopUp(){
+            var reprompt = prompt("enter your name:" + "your name here");
+            document.write("you have entered:" + reprompt);
+        }
+    </script>
+</body>
+
+</html>

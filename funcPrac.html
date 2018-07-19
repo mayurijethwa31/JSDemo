@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>basic</title>
+    </head>
+    <body>
+        <script>
+            function sayHello(){
+                console.log("in sayHello");
+            }
+            
+            sayHello();
+            
+            sayHello.person = {
+                fname:"John",
+                lname:"Doe"
+            }
+            
+            console.log(sayHello.person.lname);
+            sayHello.age = 12
+            
+            console.log(sayHello.age);
+            
+            sayHello.myFunc = function(){
+                console.log("hello");
+                
+            }
+            
+            console.log(sayHello.myFunc());
+            
+        </script>
+    </body>
+</html>

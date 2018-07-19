@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+<h2>JavaScript String Methods</h2>
+
+<p id="p01">L1rem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker versions of Lorem Ipsum.</p>
+
+<label>demo</label><p id="demo"></p><br>
+<label>demo1</label><p id="demo1"></p><br>
+<label>demo2</label><p id="demo2"></p><br>
+<label>demo3</label><p id="demo3"></p><br>
+
+<script>
+var str = document.getElementById("p01").innerHTML ;
+ console.log(str);
+var n = str.search("Ipsum");
+document.getElementById("demo").innerHTML = n;
+    console.log(n);
+    
+document.getElementById("demo1").innerHTML = /like/g.test(str);
+var x = /like/.exec(str);
+ document.getElementById("demo2").innerHTML = x;  
+    
+    
+document.getElementById("demo3").innerHTML = /[A-Z][a-z]/g.exec(str);
+document.getElementById("p01").innerHTML = str.replace("dummy" , "DUMMY");
+console.log(x);
+</script>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<html>
+
+<head>
+    <title>IIFE</title>
+</head>
+
+<body>
+    IIFE
+    <script>
+        //function statement
+        function greetStatFunc(name){
+            console.log('Hi ' + name);
+        }
+        greetStatFunc('John');
+        
+        //function expressions
+        var greetExpFunct = function(name){
+            console.log('Hi ' + name);
+            return name;
+        };
+        greetExpFunct("Jane");
+        
+        //IIFE functions
+        (function(name) {
+            console.log('Hi ' + name);
+        }('Mark'));
+    </script>
+</body>
+
+</html>

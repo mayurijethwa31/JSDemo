@@ -1,0 +1,28 @@
+<html>
+
+<head>
+    <title>Object Literals</title>
+</head>
+
+<body>
+    <script>
+        //new Object() can be repalced by {}
+        /*var person = {
+            firstname: "neeta",
+            lastname: "arbole",
+            address: {
+                city: "pune"
+            }
+        };
+        console.log("name is: " + person.firstname + " " + person.lastname + " " + "Address is: " + person.address.city);*/
+        
+       /* console.log(JSON.stringify(person));*/
+        
+        var jsonValue = JSON.parse('{"firstname":"neeta","lastname":"arbole","address":{"city":"pune"}}');
+        
+        console.log(jsonValue);
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<html>
+    <head>
+    </head>
+    <body>
+    <p> please enter a number between 10 and 20</p>
+    <input id="in" type="text">
+        <button type="button" onclick="myFunction()">check input</button>
+        <p id="out"></p>
+        
+        <script>
+        
+            function myFunction(){
+                var inputValue = document.getElementById("in").value;
+                var outputValue = document.getElementById("out");
+                outputValue.innerHTML = "";
+                try{
+                    if(inputValue === "") throw "empty";
+                    if(isNaN(inputValue)) throw "not  number";
+                    inputValue = Number(inputValue);
+                    if(inputValue > 20) throw "greater than limit";
+                    if(inputValue < 10) throw "less than limit"
+                }catch(error){
+                   outputValue.innerHTML = "input is " + error; 
+                }finally{
+                    console.log("output executed")
+                }
+                if(outputValue.innerHTML === ""){
+                   outputValue.innerHTML = "test value is in the limits"
+                   }
+                
+            }
+        
+        
+        </script>
+    </body>
+</html>

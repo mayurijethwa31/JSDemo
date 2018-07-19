@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>Functions</title>
+    </head>
+    <body>
+        <script>
+            function greet(){ 
+                console.log('hi'); 
+            }
+            
+            greet.value = "good morning";
+            
+            greet.gestures ={
+                formal: "shake hands",
+                informal: "wave"
+                }
+            
+            greet.language = function(lang){
+                if(lang === "english"){
+                   console.log("Hi")
+                   }else if(lang === "hindi"){
+                       console.log("namaste");
+                   }
+            }
+            greet();
+            console.log(greet.gestures.formal)
+            greet.language("hindi")
+            console.log(greet.language);
+            
+        </script>
+    </body>
+</html>
